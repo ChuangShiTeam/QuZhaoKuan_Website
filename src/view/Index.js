@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 import {Link} from 'react-router';
-import {Carousel} from 'react-bootstrap';
 
 import Header from '../component/Header';
 import Footer from '../component/Footer';
@@ -34,7 +33,9 @@ class Index extends Component {
     render() {
         return (
             <div>
-            dd
+                <Header />
+
+                <Footer />
             </div>
         );
     }

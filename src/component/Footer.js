@@ -27,42 +27,54 @@ class Footer extends Component {
         return (
             <div className="footer">
                 <div className="container col-padding">
-                    <div className="menu hidden-xs">
-                        {
-                            this.props.website_menu.list.map(function (website_menu) {
-                                return (
-                                    <li key={website_menu.website_menu_id}>
-                                        <Link to={website_menu.website_menu_url === '' ? '/page/' + website_menu.page_id : website_menu.website_menu_url}>{website_menu.website_menu_name}</Link>
-                                    </li>
-                                )
-                            })
-                        }
-                    </div>
-                    <div className="line hidden-xs"></div>
                     <div className="row copyright margin-top-20">
-                        <div className="col-md-3 col-xs-12">
-                            郑老师 82596128 18188719581(中小学)
+                        <div className="col-md-2 col-xs-2">
+                            <h2 className="footer-title">趣找款</h2>
                         </div>
-                        <div className="col-md-3 col-xs-12">
-                            董老师 82596004(中小学)
+                        <div className="col-md-2 col-xs-2">
+                            <h2>新手指南</h2>
+                            <p>了解趣找款</p>
+                            <p>注册新用户</p>
+                            <p>买家入门</p>
+                            <p>卖家入门</p>
                         </div>
-                        <div className="col-md-3 col-xs-12">
-                            陈老师 82596001(小学)
+                        <div className="col-md-2 col-xs-2">
+                            <h2>采购商服务</h2>
+                            <p>找供应商</p>
+                            <p>采购平台</p>
+                            <p>找货神器</p>
+                            <p>企业信用</p>
                         </div>
-                        <div className="col-md-3 col-xs-12">
-                            吴老师 82596002(小学)
+                        <div className="col-md-2 col-xs-2">
+                            <h2>设计师服务</h2>
+                            <p>诚信通服务</p>
+                            <p>网销宝服务</p>
+                            <p>卖家服务</p>
+                            <p>物流服务</p>
                         </div>
-                        <div className="col-md-3 col-xs-12">
-                            田老师 82596016(中学)
+                        <div className="col-md-2 col-xs-2">
+                            <h2>交易安全</h2>
+                            <p>交易维权攻略</p>
+                            <p>买家防骗</p>
+                            <p>卖家防骗</p>
+                            <p>在线咨询</p>
                         </div>
-                        <div className="col-md-3 col-xs-12">
-                            李老师 82596003(中学)
-                        </div>
-                        <div className="col-md-12 col-xs-12">
-                            学校地址：佛山市禅城区东鄱南路10号
+                        <div className="col-md-2 footer_code">
+                            <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1062989499,1682648318&fm=58" alt=""/>
                         </div>
                         <div className="col-xs-12 visible-xs margin-bottom-20">
                         </div>
+                    </div>
+                    <div className="line hidden-xs"></div>
+                    <div className="friendly-link copyright container">
+                        <ul>
+                            <li>关于我们</li>
+                            <li>诚聘英才</li>
+                            <li>商务合作</li>
+                            <li>帮助中心</li>
+                            <li>联系我们</li>
+                        </ul>
+                        <div className="margin-top-5">@2015 QuZhaoKuan All rights reserved</div>
                     </div>
                 </div>
             </div>
@@ -78,8 +90,4 @@ Footer.defaultProps = {
 
 };
 
-export default connect((state) => {
-    return {
-        website_menu: state.website_menu
-    }
-})(Footer);
+export default Footer;
