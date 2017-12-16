@@ -10,6 +10,10 @@ h1, h2, h3, h4, h5, h6, p {
     padding: 0;
 }
 
+button{
+    outline:none;
+}
+
 img {
     border: 0px;
     max-width: 100%;
@@ -64,6 +68,14 @@ a, area {
     clear: both
 }
 
+.text_center{
+    text-align: center !important;
+}
+
+.line{
+    border-bottom: 1px solid #C8C8C8;
+}
+
 .margin-top {
     margin-top: 10px;
 }
@@ -94,6 +106,9 @@ a, area {
 
 .margin-top-30 {
     margin-top: 30px;
+}
+.margin-top-60 {
+    margin-top: 60px;
 }
 
 .margin-bottom-20 {
@@ -248,4 +263,102 @@ body {
 .footer .friendly-link li{
     display: inline-block;
     padding:0px 13px;
+}
+
+/*首页样式*/
+.index_banner{
+    height:482px;
+    width:100%;
+    background-image: url("http://s.amazeui.org/media/i/demos/pure-4.jpg");
+    background-size: cover;
+}
+.index_banner_box{
+    height:482px;
+    position: relative;
+}
+.index_sidebar{
+    width: 263px;
+    height: 526px;
+    background: #f55443;
+    position: absolute;
+    top: -44px;
+    left: 0px;
+    color: #ffffff;
+    box-sizing: border-box;
+    padding: 12px 20px;
+}
+.index_sidebar_title{
+    font-size: 16px;
+}
+index_sidebar .classified_title{
+    font-size: 16px;
+}
+.index_sidebar_item li{
+    font-size: 14px;
+}
+.index_nav{
+    position: absolute;
+    top: -36px;
+    left: 306px;
+}
+.index_nav li{
+    font-size:16px;
+    padding:0px 18px;
+    color:#636363;
+}
+.index_nav ul .act{
+    color:#ff6000;
+}
+.index_personal{
+    width: 236px;
+    height:456px;
+    background: #fff;
+    position: absolute;
+    top: 13px;
+    right: 0px;
+    padding: 12px;
+}
+.index_personal .user_image img{
+    width:70px;
+    height: 70px;
+    display: block;
+    border-radius: 50%;
+    margin: 8px auto 14px auto;
+}
+.index_personal_text {
+    font-size:12px;
+    color:#636363;
+}
+.index_personal_prompt{
+    padding-bottom: 22px;
+}
+.user_login_reg{
+    padding-bottom: 20px;
+}
+.user_login_reg button{
+    font-size:12px;
+    margin-left: 29px;
+    border: none;
+    padding: 2px 16px;
+}
+.login{
+    color:#fff;
+    background: #ff6000;
+    border: solid 2px #ff6000 !important;
+}
+.register{
+    border: solid 2px #ff6000 !important;
+    color: #ff6000;
+    background: #fff;
+}
+.index_notice li{
+    padding-top: 16px;
+    font-size:12px;
+    color:#636363;
+    line-height:13px;
+}
+.index_notice img{
+    margin-top: 15px;
+    width: 214px;
+    height: 129px;
 }
