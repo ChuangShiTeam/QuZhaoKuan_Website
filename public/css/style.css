@@ -339,9 +339,9 @@ index_sidebar .classified_title{
 }
 .user_login_reg button{
     font-size:12px;
-    margin-left: 29px;
+    margin-left: 24px;
     border: none;
-    padding: 2px 16px;
+    padding: 1px 22px
 }
 .login{
     color:#fff;
@@ -360,7 +360,7 @@ index_sidebar .classified_title{
     line-height:13px;
 }
 .index_notice img{
-    margin-top: 15px;
+    margin-top: 17px;
     width: 214px;
     height: 129px;
 }
@@ -437,7 +437,7 @@ index_sidebar .classified_title{
 }
 .new_product .main_left_img img{
     width: 378px;
-    height: 472px;
+    height: 474px;
 }
 .new_product .new_item{
     width: 792px
