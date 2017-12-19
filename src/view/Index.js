@@ -45,15 +45,6 @@ class Index extends Component {
                                         <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>
-                                    </ul>
-                                </div>
-                                <div className="index_sidebar_item">
-                                    <div className="index_sidebar_title margin-bottom-20 margin-top-30">时尚饰品</div>
-                                    <ul className="list-inline">
-                                        <li className="col-padding-right">发饰</li>
-                                        <li className="col-padding-right">发饰</li>
-                                        <li className="col-padding-right">发饰</li>
-                                        <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>
                                     </ul>
@@ -61,6 +52,19 @@ class Index extends Component {
                                 <div className="index_sidebar_item">
                                     <div className="index_sidebar_title margin-bottom-20 margin-top-30">时尚饰品</div>
                                     <ul className="list-inline">
+                                        <li className="col-padding-right">发饰</li>
+                                        <li className="col-padding-right">发饰</li>
+                                        <li className="col-padding-right">发饰</li>
+                                        <li className="col-padding-right">发饰</li>
+                                        <li className="col-padding-right">发饰</li>
+                                        <li className="col-padding-right">发饰</li>
+                                    </ul>
+                                </div>
+                                <div className="index_sidebar_item">
+                                    <div className="index_sidebar_title margin-bottom-20 margin-top-30">时尚饰品</div>
+                                    <ul className="list-inline">
+                                        <li className="col-padding-right">发饰</li>
+                                        <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>
                                         <li className="col-padding-right">发饰</li>

@@ -271,7 +271,7 @@ body {
 .index_banner{
     height:482px;
     width:100%;
-    background-image: url("http://s.amazeui.org/media/i/demos/pure-4.jpg");
+    background-image: url("http://static.01homecdn.com/pigimg/20171213/15131315905878452.jpg");
     background-size: cover;
 }
 .index_banner_box{
@@ -307,6 +307,7 @@ index_sidebar .classified_title{
     font-size:16px;
     padding:0px 18px;
     color:#636363;
+    cursor:pointer;
 }
 .index_nav ul .act{
     color:#ff6000;
@@ -493,4 +494,32 @@ index_sidebar .classified_title{
     color:#2e2e2e;
     line-height:24px;
     padding-top:6px;
+}
+/*导航组件*/
+.nav_style{
+    font-size:16px;
+    color:#ffffff;
+    line-height:23px;
+    background: #ff6000;
+    position: relative;
+}
+.nav_style .category{
+    position: absolute;
+    width: 226px;
+    height: 52px;
+    display: block;
+    background: #ff6000;
+    padding: 12px 8px 10px 8px;
+    top: -4px;
+    -moz-box-shadow: 0px 1px 12px #888888;
+    box-shadow: 0px 1px 12px #888888;
+}
+.nav_style ul{
+    margin-left: 268px;
+}
+.nav_style ul li{
+    padding: 10px 20px;
+}
+.nav_style ul .on{
+    background: #3c3334;
 }
