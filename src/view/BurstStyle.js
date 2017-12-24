@@ -83,6 +83,22 @@ class BurstStyle extends Component {
                                 </div>
                                 <div className="clearfix"></div>
                             </li>
+                            <li className="col-padding-right-10">
+                                <div className="col-md-1 col-xs-2">
+                                    <span className="left">颜色:</span>
+                                </div>
+                                <div className="col-md-11 col-xs-10">
+                                    <ul className="item list-inline left">
+                                        <li>红色</li>
+                                        <li>黑色</li>
+                                        <li>灰色</li>
+                                        <li>紫色</li>
+                                        <li>蓝色</li>
+                                        <li>绿色</li>
+                                    </ul>
+                                </div>
+                                <div className="clearfix"></div>
+                            </li>
                         </ul>
                     </div>
                     <div className="category_nav margin-top-20 margin-bottom-20">
@@ -95,7 +111,7 @@ class BurstStyle extends Component {
                     </div>
 
                     <div className="pro_item container col-no-padding min_width">
-                        <ul className="margin-top-60">
+                        <ul className="margin-top-100">
                             <li className="pull-left one">
                                 <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
                                 <p className="index_pro_name text-center margin-top">

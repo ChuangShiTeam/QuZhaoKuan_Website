@@ -9,7 +9,7 @@ import Navigation from '../component/Navigation';
 
 import util from '../common/util';
 
-class NewStyle extends Component {
+class Collocation extends Component {
     constructor(props) {
         super(props);
 
@@ -17,7 +17,7 @@ class NewStyle extends Component {
     }
 
     componentDidMount() {
-        util.setTitle('找新款');
+        util.setTitle('找搭配');
 
         util.scrollToTop(0);
     }
@@ -110,66 +110,39 @@ class NewStyle extends Component {
                         </ul>
                     </div>
 
-                    <div className="pro_item container col-no-padding min_width">
-                        <ul className="margin-top-100">
-                            <li className="pull-left one">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
+                    <div className="index_collocation collocation_main min_width margin-top-100">
+                        <ul className="container col-no-padding">
+                            <li className="pull-left margin-bottom">
+                                <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                <div className="col-padding-left">
+                                    <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
+                                    <p className="index_pro_price col-padding-left-10">¥1200.00</p>
+                                </div>
                             </li>
-                            <li className="pull-left">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
+                            <li className="pull-left margin-bottom">
+                                <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                <div className="col-padding-left">
+                                    <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
+                                    <p className="index_pro_price col-padding-left-10">¥1200.00</p>
+                                </div>
                             </li>
-                            <li className="pull-left">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
+                            <li className="pull-left margin-bottom">
+                                <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                <div className="col-padding-left">
+                                    <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
+                                    <p className="index_pro_price col-padding-left-10">¥1200.00</p>
+                                </div>
                             </li>
-                            <li className="pull-left">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
-                            </li>
-                            <li className="pull-left one">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
-                            </li>
-                            <li className="pull-left">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
-                            </li>
-                            <li className="pull-left">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
-                            </li>
-                            <li className="pull-left">
-                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                <p className="index_pro_name text-center margin-top">
-                                    <span className="item_pro_name">淡水银河耳饰首发</span>
-                                </p>
-                                <p className="index_pro_price text-center">¥1200.00</p>
+                            <li className="pull-left margin-bottom">
+                                <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                <div className="col-padding-left">
+                                    <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
+                                    <p className="index_pro_price col-padding-left-10">¥1200.00</p>
+                                </div>
                             </li>
                             <div className="clear-both"></div>
                         </ul>
+                        <div className="clear-both"></div>
                     </div>
 
                     <div className="page text-right">
@@ -195,4 +168,4 @@ export default connect((state) => {
     return {
         index: state.index
     }
-})(NewStyle);
+})(Collocation);

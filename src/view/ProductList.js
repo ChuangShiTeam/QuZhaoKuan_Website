@@ -9,7 +9,7 @@ import Navigation from '../component/Navigation';
 
 import util from '../common/util';
 
-class NewStyle extends Component {
+class ProductList extends Component {
     constructor(props) {
         super(props);
 
@@ -17,7 +17,7 @@ class NewStyle extends Component {
     }
 
     componentDidMount() {
-        util.setTitle('找新款');
+        util.setTitle('商品列表');
 
         util.scrollToTop(0);
     }
@@ -195,4 +195,4 @@ export default connect((state) => {
     return {
         index: state.index
     }
-})(NewStyle);
+})(ProductList);

@@ -110,6 +110,9 @@ a, area {
 .margin-top-60 {
     margin-top: 60px;
 }
+.margin-top-100{
+    margin-top: 100px;
+}
 
 .margin-bottom-20 {
     margin-bottom: 20px;
@@ -502,6 +505,7 @@ index_sidebar .classified_title{
     line-height:23px;
     background: #ff6000;
     position: relative;
+    margin-bottom: 32px;
 }
 .nav_style .category{
     position: absolute;
@@ -602,4 +606,10 @@ index_sidebar .classified_title{
     border-color: #ff7d2e;}
 .page a{
     color: #636363 !important;
+}
+.collocation_main{
+    background: #fff;
+}
+.collocation_main li{
+    border: 1px solid #e8e8e8;
 }
