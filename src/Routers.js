@@ -9,6 +9,7 @@ import index from './store/index';
 import Index from './view/Index';
 import NotFound from './view/NotFound';
 import NewStyle from "./view/NewStyle";
+import BurstStyle from "./view/BurstStyle";
 
 const store = createStore(
     combineReducers({
@@ -25,9 +26,10 @@ const Routers = () =>
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" onEnter={handleEnter}>
-                <IndexRedirect to="/new/style"/>
+                <IndexRedirect to="/burst/style"/>
                 <Route path="/index" component={Index}/>
                 <Route path="/new/style" component={NewStyle}/>
+                <Route path="/burst/style" component={BurstStyle}/>
                 <Route path="/not/found" component={NotFound}/>
             </Route>
         </Router>
