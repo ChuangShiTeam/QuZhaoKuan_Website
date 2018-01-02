@@ -11,6 +11,7 @@ import NotFound from './view/NotFound';
 import NewStyle from "./view/NewStyle";
 import BurstStyle from "./view/BurstStyle";
 import Collocation from "./view/Collocation";
+import CommodityDetails from "./view/CommodityDetails";
 import ProductList from "./view/ProductList";
 
 const store = createStore(
@@ -28,12 +29,13 @@ const Routers = () =>
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" onEnter={handleEnter}>
-                <IndexRedirect to="/product/list"/>
+                <IndexRedirect to="/commodity/details"/>
                 <Route path="/index" component={Index}/>
                 <Route path="/new/style" component={NewStyle}/>
                 <Route path="/burst/style" component={BurstStyle}/>
                 <Route path="/collocation" component={Collocation}/>
                 <Route path="/product/list" component={ProductList}/>
+                <Route path="/commodity/details" component={CommodityDetails}/>
                 <Route path="/not/found" component={NotFound}/>
             </Route>
         </Router>
