@@ -13,6 +13,7 @@ import BurstStyle from "./view/BurstStyle";
 import Collocation from "./view/Collocation";
 import CommodityDetails from "./view/CommodityDetails";
 import ProductList from "./view/ProductList";
+import Login from "./view/Login";
 
 const store = createStore(
     combineReducers({
@@ -29,13 +30,14 @@ const Routers = () =>
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" onEnter={handleEnter}>
-                <IndexRedirect to="/commodity/details"/>
+                <IndexRedirect to="/login"/>
                 <Route path="/index" component={Index}/>
                 <Route path="/new/style" component={NewStyle}/>
                 <Route path="/burst/style" component={BurstStyle}/>
                 <Route path="/collocation" component={Collocation}/>
                 <Route path="/product/list" component={ProductList}/>
                 <Route path="/commodity/details" component={CommodityDetails}/>
+                <Route path="/login" component={Login}/>
                 <Route path="/not/found" component={NotFound}/>
             </Route>
         </Router>

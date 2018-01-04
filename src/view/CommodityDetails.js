@@ -35,7 +35,7 @@ class CommodityDetails extends Component {
             <div>
                 <Header />
                 <Navigation />
-                    <div className="container col-no-padding">
+                <div className="container col-no-padding">
                         <div className="commodity_title"><b>亚马逊创意简约生命树吊坠项链 欧美个性镂空金色毛衣链厂家直销</b></div>
                         <div className="commodity_main">
                             <div className="pro_img left margin-right">

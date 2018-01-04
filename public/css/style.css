@@ -527,7 +527,7 @@ index_sidebar .classified_title{
 .nav_style ul .on{
     background: #3c3334;
 }
-/*找新款*/
+/* 找新款 找爆款 */
 .all_classify{
     font-size:14px;
     color:#636363;
@@ -607,6 +607,7 @@ index_sidebar .classified_title{
 .page a{
     color: #636363 !important;
 }
+/* 商品详情 */
 .collocation_main{
     background: #fff;
 }
@@ -771,4 +772,66 @@ index_sidebar .classified_title{
 .right_pro_info .image_text img{
     width:100%;
     margin-top: 20px;
+}
+/* 登陆 */
+.login_img img{
+    width: 360px;
+    height: 360px;
+    display: block;
+    margin: 0 auto;
+}
+.login_title{
+    width:356px;
+    font-size:20px;
+    color:#636363;
+}
+.login_title .on{
+    color:#ff6000 !important;
+    padding: 0px 4px 10px 4px;
+    border-bottom:2px solid #ff6000;
+}
+.login_from .form-label{
+    width: 48px;
+    height: 41px;
+    background: #eee;
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding: 9px 10px 10px 17px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius:6px;
+}
+.login_from li{
+    width:356px;
+    height: 43px;
+    border: 1px solid #ccc;
+    position: relative;
+    border-radius: 6px;
+}
+.input-block{
+    height: 41px;
+    width: 306px;
+    position: absolute;
+    top:0px;
+    left:48px;
+    border-radius: 6px;
+}
+.login_item {
+    width: 356px;
+    font-size: 14px;
+    color: #000000;
+}
+.login_item input{
+    margin-right: 6px;
+    position: relative;
+    top:2px;
+}
+.login_item button{
+    background:#ff6000;
+    border:1px solid #ff6000;
+    border-radius:5px;
+    width:350px;
+    height:43px;
+    font-size:18px;
+    color:#ffffff;
 }
