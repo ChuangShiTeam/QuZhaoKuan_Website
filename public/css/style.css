@@ -835,3 +835,32 @@ index_sidebar .classified_title{
     font-size:18px;
     color:#ffffff;
 }
+/* 购物车 */
+.not_cart h4{
+    font-size:18px;
+    color:#2e2e2e;
+    line-height:40px;
+}
+.not_cart .go_purchase{
+    background:#ff6000;
+    border:2px solid #ff6000;
+    width:99px;
+    height:34px;
+    color: #fff;
+}
+.not_cart .go_order{
+    background:#ffffff;
+    border:2px solid #d8d8d8;
+    width:99px;
+    height:34px;
+    color:#2e2e2e;
+}
+.not_cart .icon_cart{
+    padding-right: 60px;
+}
+.not_cart .icon_cart span{
+    width: 150px;
+    height: 150px;
+    font-size: 150px;
+    color: #eee;
+}
