@@ -31,7 +31,7 @@ const Routers = () =>
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" onEnter={handleEnter}>
-                <IndexRedirect to="/shopping/cart"/>
+                <IndexRedirect to="/index"/>
                 <Route path="/index" component={Index}/>
                 <Route path="/new/style" component={NewStyle}/>
                 <Route path="/burst/style" component={BurstStyle}/>

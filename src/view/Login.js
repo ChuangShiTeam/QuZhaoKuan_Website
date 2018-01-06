@@ -62,7 +62,11 @@ class Login extends Component {
                         </div>
                         <div className="margin-top-20 login_item clearfix">
                             <span className="left">
-                                <input type="checkbox" />自动登陆</span>
+                                <label>
+                                    <input type="checkbox" />
+                                    <span className="not-weight">自动登陆</span>
+                                </label>
+                            </span>
                             <span className="right">忘记密码</span>
                         </div>
                         <div className="margin-top-20 login_item clearfix">
