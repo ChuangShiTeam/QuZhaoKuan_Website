@@ -35,21 +35,21 @@ class Header extends Component {
                     <div className="container col-padding">
                         <div className="pull-left">
                             <Link className="margin-right" to="/index">欢迎来去找款</Link>
-                            <Link className="margin-right margin-left" to="/index">请登录</Link>
-                            <Link className="margin-right" to="/index">免费注册</Link>
+                            <Link className="margin-right margin-left" to="/login">请登录</Link>
+                            <Link className="margin-right" to="/not/found">免费注册</Link>
                         </div>
                         <div className="pull-right">
-                            <Link className="margin-right" to="">我的去找款</Link>
+                            <Link className="margin-right" to="/not/found">我的去找款</Link>
                             |
-                            <Link className="margin-left margin-right" to="">进货车</Link>
+                            <Link className="margin-left margin-right" to="/not/found">进货车</Link>
                             |
-                            <Link className="margin-left margin-right" to="">收藏夹</Link>
+                            <Link className="margin-left margin-right" to="/not/found">收藏夹</Link>
                             |
-                            <Link className="margin-left margin-right" to="">我是设计师</Link>
+                            <Link className="margin-left margin-right" to="/not/found">我是设计师</Link>
                             |
-                            <Link className="margin-left margin-right" to="">我是供应商</Link>
+                            <Link className="margin-left margin-right" to="/not/found">我是供应商</Link>
                             |
-                            <Link className="margin-left margin-right" to="">客服中心</Link>
+                            <Link className="margin-left margin-right" to="/not/found">客服中心</Link>
                         </div>
                     </div>
                     <div className="main">

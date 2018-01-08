@@ -33,31 +33,31 @@ class Footer extends Component {
                         </div>
                         <div className="col-md-2 col-xs-2">
                             <h2>新手指南</h2>
-                            <p>了解趣找款</p>
-                            <p>注册新用户</p>
-                            <p>买家入门</p>
-                            <p>卖家入门</p>
+                            <p><Link to="/not/found">了解趣找款</Link></p>
+                            <p><Link to="/not/found">注册新用户</Link></p>
+                            <p><Link to="/not/found">买家入门</Link></p>
+                            <p><Link to="/not/found">卖家入门</Link></p>
                         </div>
                         <div className="col-md-2 col-xs-2">
                             <h2>采购商服务</h2>
-                            <p>找供应商</p>
-                            <p>采购平台</p>
-                            <p>找货神器</p>
-                            <p>企业信用</p>
+                            <p><Link to="/not/found">找供应商</Link></p>
+                            <p><Link to="/not/found">采购平台</Link></p>
+                            <p><Link to="/not/found">找货神器</Link></p>
+                            <p><Link to="/not/found">企业信用</Link></p>
                         </div>
                         <div className="col-md-2 col-xs-2">
                             <h2>设计师服务</h2>
-                            <p>诚信通服务</p>
-                            <p>网销宝服务</p>
-                            <p>卖家服务</p>
-                            <p>物流服务</p>
+                            <p><Link to="/not/found">诚信通服务</Link></p>
+                            <p><Link to="/not/found">网销宝服务</Link></p>
+                            <p><Link to="/not/found">卖家服务</Link></p>
+                            <p><Link to="/not/found">物流服务</Link></p>
                         </div>
                         <div className="col-md-2 col-xs-2">
                             <h2>交易安全</h2>
-                            <p>交易维权攻略</p>
-                            <p>买家防骗</p>
-                            <p>卖家防骗</p>
-                            <p>在线咨询</p>
+                            <p><Link to="/not/found">交易维权攻略</Link></p>
+                            <p><Link to="/not/found">买家防骗</Link></p>
+                            <p><Link to="/not/found">卖家防骗</Link></p>
+                            <p><Link to="/not/found">在线咨询</Link></p>
                         </div>
                         <div className="col-md-2 footer_code">
                             <img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=1062989499,1682648318&fm=58" alt=""/>
@@ -68,11 +68,11 @@ class Footer extends Component {
                     <div className="line hidden-xs"></div>
                     <div className="friendly-link copyright container">
                         <ul>
-                            <li>关于我们</li>
-                            <li>诚聘英才</li>
-                            <li>商务合作</li>
-                            <li>帮助中心</li>
-                            <li>联系我们</li>
+                            <li><Link to="/not/found">关于我们</Link></li>
+                            <li><Link to="/not/found">诚聘英才</Link></li>
+                            <li><Link to="/not/found">商务合作</Link></li>
+                            <li><Link to="/not/found">帮助中心</Link></li>
+                            <li><Link to="/not/found">联系我们</Link></li>
                         </ul>
                         <div className="margin-top-5">@2015 QuZhaoKuan All rights reserved</div>
                     </div>

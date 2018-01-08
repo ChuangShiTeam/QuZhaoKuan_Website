@@ -1,11 +1,12 @@
 const initialState = {
-    navList: [],
-    categoryList: []
+    categoryList: [],
+    selectCategory:[],
+    goodsList:[]
 };
 
-function product(state = initialState, action) {
+function newStyle(state = initialState, action) {
     switch (action.type) {
-        case 'index':
+        case 'newStyle':
             return Object.assign({}, state, action.data);
 
         default :
@@ -13,4 +14,4 @@ function product(state = initialState, action) {
     }
 }
 
-export default product;
+export default newStyle;

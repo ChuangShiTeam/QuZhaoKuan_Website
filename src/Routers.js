@@ -5,6 +5,7 @@ import {Provider} from 'react-redux';
 import {routerReducer} from 'react-router-redux';
 
 import index from './store/index';
+import newStyle from './store/newStyle';
 
 import Index from './view/Index';
 import NotFound from './view/NotFound';
@@ -19,6 +20,7 @@ import ShoppingCart from "./view/ShoppingCart";
 const store = createStore(
     combineReducers({
         index,
+        newStyle,
         routing: routerReducer
     })
 );

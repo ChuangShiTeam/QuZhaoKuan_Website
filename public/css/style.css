@@ -246,6 +246,10 @@ body {
     letter-spacing:1.17px;
     margin-bottom: 20px;
 }
+
+.footer a{
+    color: #fff;
+}
 .footer .line {
     border-top: 1px solid #ffffff;
     margin-bottom: 20px;
@@ -270,6 +274,9 @@ body {
 .footer .friendly-link li{
     display: inline-block;
     padding:0px 13px;
+}
+.footer .friendly-link li a{
+    color: #fff;
 }
 .min_width{
     min-width: 1170px
@@ -302,7 +309,8 @@ body {
 index_sidebar .classified_title{
     font-size: 16px;
 }
-.index_sidebar_item li{
+.index_sidebar_item li a{
+    color: #fff;
     font-size: 14px;
 }
 .index_nav{
@@ -316,7 +324,7 @@ index_sidebar .classified_title{
     color:#636363;
     cursor:pointer;
 }
-.index_nav ul .act{
+.index_nav li:hover a{
     color:#ff6000;
 }
 .index_personal{
@@ -528,6 +536,12 @@ index_sidebar .classified_title{
 .nav_style ul li{
     padding: 10px 20px;
 }
+.nav_style ul li:hover{
+    background: #3c3334;
+}
+.nav_style ul li a{
+    color: #fff;
+}
 .nav_style ul .on{
     background: #3c3334;
 }
@@ -539,6 +553,9 @@ index_sidebar .classified_title{
 .all_classify .all_item li{
     color: #ff6e15;
     border: 1px solid #e8e8e8;
+}
+.all_classify .all_item li:hover .glyphicon{
+    cursor: pointer;
 }
 .product_up{
     width:38px;
@@ -564,6 +581,9 @@ index_sidebar .classified_title{
     width: 120px;
     color:#636363;
     border: none !important;
+}
+.category_list > ul > li .item li:hover{
+    cursor:pointer;
 }
 .category_list > ul > li .item .act{
     background: #ff6000;
