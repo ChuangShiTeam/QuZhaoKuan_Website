@@ -596,6 +596,11 @@ index_sidebar .classified_title{
 .category_nav li{
     padding:4px 26px;
 }
+.category_nav li:hover{
+    color: #fff;
+    cursor:pointer;
+    background: #ff6000;
+}
 .category_nav .act{
     color: #fff;
     background: #ff6000;

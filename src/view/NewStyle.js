@@ -222,17 +222,21 @@ class NewStyle extends Component {
 
     handleSelectCategory(categoryId, categoryItem) {
         let selectCategory = this.props.newStyle.selectCategory;
-        if (selectCategory.findIndex((item, index) => item.categoryItemId === categoryItem.categoryItemId) === -1) {
-            categoryItem.categoryId = categoryId;
-            selectCategory.push(categoryItem);
+        let selectCategoryIndex = selectCategory.findIndex((item, index) => item.categoryId === categoryId);
+        if (selectCategoryIndex > -1) {
+            selectCategory.splice(selectCategoryIndex, 1);
         }
+        categoryItem.categoryId = categoryId;
+        selectCategory.push(categoryItem);
         let categoryList = this.props.newStyle.categoryList;
         let categoryIndex = categoryList.findIndex((category, index) => category.categoryId === categoryId);
         if (categoryIndex > -1) {
             let newCategoryItem = categoryList[categoryIndex];
-
             let categoryItemIndex = newCategoryItem.children.findIndex((item, index) => item.categoryItemId === categoryItem.categoryItemId);
             if (categoryItemIndex > -1) {
+                newCategoryItem.children.forEach((item) => {
+                    item.isActive = false;
+                });
                 newCategoryItem.children[categoryItemIndex].isActive = true;
                 categoryList[categoryIndex] = newCategoryItem;
             }
@@ -248,10 +252,11 @@ class NewStyle extends Component {
     }
 
     handleCancelSelect(categoryId, categoryItemId) {
-        let selectCategory = this.props.newStyle.selectCategory;
-        let index = selectCategory.findIndex((categoryItem, index) => categoryItem.categoryItemId === categoryItemId);
+        let selectCategory = this.props.newStyle.selectCategory;  //获取数组元素
+        let index = selectCategory.findIndex((categoryItem, index) => categoryItem.categoryItemId === categoryItemId);  //判断元素是否存在
         if (index > -1) {
             selectCategory.splice(index, 1);
+            // selectCategory.children[index].isActive = false;
         }
 
         let categoryList = this.props.newStyle.categoryList;
@@ -286,15 +291,15 @@ class NewStyle extends Component {
                                 {
                                     this.props.newStyle.selectCategory.map((categoryItem, index) =>
                                         <li className="col-padding-right margin-right">
-                                                {categoryItem.categoryItemName}
-                                                <span className="glyphicon glyphicon-remove col-padding-left" onClick={this.handleCancelSelect.bind(this, categoryItem.categoryId, categoryItem.categoryItemId)}></span>
+                                            {categoryItem.categoryItemName}
+                                            <span className="glyphicon glyphicon-remove col-padding-left" onClick={this.handleCancelSelect.bind(this, categoryItem.categoryId, categoryItem.categoryItemId)}></span>
                                         </li>
                                     )
                                 }
                             </ul>
                         </div>
                         <div className="col-md-3 text-right col-no-padding">
-                            共239984件相关产品
+                            共1212件相关产品
                             <span className="product_up margin-left">
                                 <span className="glyphicon glyphicon-chevron-up"></span>
                             </span>
