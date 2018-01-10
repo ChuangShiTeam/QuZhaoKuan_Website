@@ -6,6 +6,8 @@ import {routerReducer} from 'react-router-redux';
 
 import index from './store/index';
 import newStyle from './store/newStyle';
+import burstStyle from './store/burstStyle';
+import collocation from './store/collocation';
 
 import Index from './view/Index';
 import NotFound from './view/NotFound';
@@ -21,6 +23,8 @@ const store = createStore(
     combineReducers({
         index,
         newStyle,
+        burstStyle,
+        collocation,
         routing: routerReducer
     })
 );

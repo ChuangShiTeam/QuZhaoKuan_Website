@@ -202,7 +202,9 @@ class Index extends Component {
                         <div className="index_title text-center">特卖专场</div>
                         <div className="index_sale_left pull-left">
                             <Link to="/not/found">
-                                <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                <div className="index_sale_left_img">
+                                    <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                </div>
                             </Link>
                         </div>
                         <div className="index_sale_right pull-left">
@@ -229,7 +231,9 @@ class Index extends Component {
                             <div className="index_title text-center">首发新品</div>
                             <div className="main_left_img pull-left margin-bottom-20">
                                 <Link to="/not/found">
-                                    <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="main_left_img_box">
+                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <p className="index_pro_name text-center margin-top">淡水银河耳饰首发</p>
                                     <p className="index_pro_price text-center margin-top margin-bottom-20">¥1200.00</p>
                                 </Link>
@@ -238,7 +242,9 @@ class Index extends Component {
                                 <ul>
                                     <li className="pull-left">
                                         <Link to="/not/found">
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="img_box">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">淡水银河耳饰首发</span>
                                             </p>
@@ -247,7 +253,9 @@ class Index extends Component {
                                     </li>
                                     <li className="pull-left">
                                         <Link to="/not/found">
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="img_box">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">淡水银河耳饰首发</span>
                                             </p>
@@ -256,7 +264,9 @@ class Index extends Component {
                                     </li>
                                     <li className="pull-left">
                                         <Link to="/not/found">
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="img_box">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">淡水银河耳饰首发</span>
                                             </p>
@@ -265,7 +275,9 @@ class Index extends Component {
                                     </li>
                                     <li className="pull-left">
                                         <Link to="/not/found">
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="img_box">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">淡水银河耳饰首发</span>
                                             </p>
@@ -274,7 +286,9 @@ class Index extends Component {
                                     </li>
                                     <li className="pull-left">
                                         <Link to="/not/found">
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="img_box">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">淡水银河耳饰首发</span>
                                             </p>
@@ -283,7 +297,9 @@ class Index extends Component {
                                     </li>
                                     <li className="pull-left">
                                         <Link to="/not/found">
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="img_box">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">淡水银河耳饰首发</span>
                                             </p>
@@ -297,7 +313,7 @@ class Index extends Component {
                     </div>
                     <div className="index_explosion container col-no-padding min_width">
                         <div className="index_title text-center">热卖爆款</div>
-                        <div className="main_img">
+                        <div className="main_img ">
                             <Link to="/not/found">
                                 <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
                             </Link>
@@ -305,7 +321,9 @@ class Index extends Component {
                         <ul className="margin-top">
                             <li className="pull-left">
                                 <Link to="/not/found">
-                                    <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="img_box">
+                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <p className="index_pro_name text-center margin-top">
                                         <span className="item_pro_name">淡水银河耳饰首发</span>
                                     </p>
@@ -314,7 +332,9 @@ class Index extends Component {
                             </li>
                             <li className="pull-left">
                                 <Link to="/not/found">
-                                    <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="img_box">
+                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <p className="index_pro_name text-center margin-top">
                                         <span className="item_pro_name">淡水银河耳饰首发</span>
                                     </p>
@@ -323,7 +343,9 @@ class Index extends Component {
                             </li>
                             <li className="pull-left">
                                 <Link to="/not/found">
-                                    <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="img_box">
+                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <p className="index_pro_name text-center margin-top">
                                         <span className="item_pro_name">淡水银河耳饰首发</span>
                                     </p>
@@ -332,10 +354,12 @@ class Index extends Component {
                             </li>
                             <li className="pull-left">
                                 <Link to="/not/found">
-                                    <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="img_box">
+                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <p className="index_pro_name text-center margin-top">
                                         <span className="item_pro_name">淡水银河耳饰首发</span>
-                                    </p>
+                                    </p>   
                                     <p className="index_pro_price text-center">¥1200.00</p>
                                 </Link>
                             </li>
@@ -347,7 +371,9 @@ class Index extends Component {
                         <ul className="container col-no-padding">
                             <li className="pull-left margin-bottom">
                                 <Link to="/not/found">
-                                    <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="collocation_main_li_img">
+                                        <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <div className="col-padding-left">
                                         <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
                                         <p className="index_pro_price col-padding-left-10">¥1200.00</p>
@@ -356,7 +382,9 @@ class Index extends Component {
                             </li>
                             <li className="pull-left margin-bottom">
                                 <Link to="/not/found">
-                                    <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="collocation_main_li_img">
+                                        <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <div className="col-padding-left">
                                         <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
                                         <p className="index_pro_price col-padding-left-10">¥1200.00</p>
@@ -365,7 +393,9 @@ class Index extends Component {
                             </li>
                             <li className="pull-left margin-bottom">
                                 <Link to="/not/found">
-                                    <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="collocation_main_li_img">
+                                        <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <div className="col-padding-left">
                                         <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
                                         <p className="index_pro_price col-padding-left-10">¥1200.00</p>
@@ -374,7 +404,9 @@ class Index extends Component {
                             </li>
                             <li className="pull-left margin-bottom">
                                 <Link to="/not/found">
-                                    <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    <div className="collocation_main_li_img">
+                                        <img className="img-responsive" src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                    </div>
                                     <div className="col-padding-left">
                                         <p className="index_collocation_title col-padding-left-10"><b>淡水银河耳饰首发</b></p>
                                         <p className="index_pro_price col-padding-left-10">¥1200.00</p>

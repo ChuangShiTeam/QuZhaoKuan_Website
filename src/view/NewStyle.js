@@ -354,7 +354,9 @@ class NewStyle extends Component {
                                 this.props.newStyle.goodsList.map((goodsList, index) =>
                                     <li className={(index === 0 || (index + 1) % 5 === 0) ? 'pull-left one' : 'pull-left'} key={index}>
                                         <Link to={goodsList.goodsUrl}>
-                                            <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            <div className="hover_scale">
+                                                <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
+                                            </div>  
                                             <p className="index_pro_name text-center margin-top">
                                                 <span className="item_pro_name">{goodsList.goodsName}</span>
                                             </p>
