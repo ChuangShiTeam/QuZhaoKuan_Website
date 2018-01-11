@@ -359,7 +359,7 @@ class Index extends Component {
                                     </div>
                                     <p className="index_pro_name text-center margin-top">
                                         <span className="item_pro_name">淡水银河耳饰首发</span>
-                                    </p>   
+                                    </p>
                                     <p className="index_pro_price text-center">¥1200.00</p>
                                 </Link>
                             </li>

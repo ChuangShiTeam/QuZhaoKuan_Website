@@ -1,12 +1,12 @@
 const initialState = {
-    navList: [],
     categoryList: [],
-    saleList:[]
+    selectCategory:[],
+    goodsList:[]
 };
 
-function product(state = initialState, action) {
+function productList(state = initialState, action) {
     switch (action.type) {
-        case 'index':
+        case 'productList':
             return Object.assign({}, state, action.data);
 
         default :
@@ -14,4 +14,4 @@ function product(state = initialState, action) {
     }
 }
 
-export default product;
+export default productList;
