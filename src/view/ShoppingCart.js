@@ -21,6 +21,38 @@ class ShoppingCart extends Component {
         util.setTitle('购物车');
 
         util.scrollToTop(0);
+
+        if (this.props.shoppingCart.cartList && this.props.shoppingCart.cartList.length === 0) {
+            //TODO 从后台获取数据
+            //本地测试静态数据
+            this.props.dispatch({
+                type: 'shoppingCart',
+                data: {
+                    cartList: [
+                        {
+                            goodsId: '1234528',
+                            goodsName: '淡水银河耳饰首发1111',
+                            unitPrice:'¥1900.00',
+                            goodsPrice: '¥1200.00',
+                            goodsImg: 'http://s.amazeui.org/media/i/demos/pure-1.jpg',
+                            goodsUrl: '',
+                            goodsNum: '12',
+                        },
+                        {
+                            goodsId: '1234528',
+                            goodsName: '淡水银河耳饰首发22222',
+                            unitPrice:'¥9900.00',
+                            goodsPrice: '¥12200.00',
+                            goodsImg: 'http://s.amazeui.org/media/i/demos/pure-2.jpg',
+                            goodsUrl: '',
+                            goodsNum: '99',
+                        }
+                    ]
+                }
+            })
+            console.log(this.props.shoppingCart.cartList)
+        }
+
     }
 
     componentWillReceiveProps(nextProps) {
@@ -52,42 +84,27 @@ class ShoppingCart extends Component {
                             <div className="col-md-1 col-no-padding col-padding-left-10">操作</div>
                         </div>
                         <div className="cart_box margin-top-20 clearfix">
-                            <div className="cart_item margin-bottom clearfix">
-                                <div className="col-md-2 col-no-padding col-padding-left-10">
-                                    <div className="col-md-1 col-no-padding">
-                                        <input className="cart_item_all " type="checkbox" />
+                            {
+                                this.props.shoppingCart.cartList.map((goodsList, index) =>
+                                    <div className="cart_item margin-bottom clearfix">
+                                        <div className="col-md-2 col-no-padding col-padding-left-10">
+                                            <div className="col-md-1 col-no-padding">
+                                                <input className="cart_item_all " type="checkbox" />
+                                            </div>
+                                            <div className="col-xs-11">
+                                                <img src={goodsList.goodsImg} alt=""/>
+                                            </div> 
+                                        </div>
+                                        <div className="col-md-6 col-no-padding col-padding-left-10">
+                                            {goodsList.goodsName}
+                                        </div>
+                                        <div className="col-md-1 col-no-padding col-padding-left-10">{goodsList.unitPrice}</div>
+                                        <div className="col-md-1 col-no-padding col-padding-left-10">{goodsList.goodsNum}</div>
+                                        <div className="col-md-1 col-no-padding col-padding-left-10">{goodsList.goodsPrice}</div>
+                                        <div className="col-md-1 col-no-padding col-padding-left-10">删除</div>
                                     </div>
-                                    <div className="col-xs-11">
-                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-no-padding col-padding-left-10">
-                                    亚马逊创意简约生命树吊坠项链 欧美个性镂空金色
-                                    毛衣链厂家直销
-                                </div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">¥19.99</div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">2</div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">¥99.00</div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">删除</div>
-                            </div>
-                            <div className="cart_item margin-bottom clearfix">
-                                <div className="col-md-2 col-no-padding col-padding-left-10">
-                                    <div className="col-md-1 col-no-padding">
-                                        <input className="cart_item_all " type="checkbox" />
-                                    </div>
-                                    <div className="col-xs-11">
-                                        <img src="http://s.amazeui.org/media/i/demos/pure-4.jpg" alt=""/>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 col-no-padding col-padding-left-10">
-                                    亚马逊创意简约生命树吊坠项链 欧美个性镂空金色
-                                    毛衣链厂家直销
-                                </div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">¥19.99</div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">2</div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">¥99.00</div>
-                                <div className="col-md-1 col-no-padding col-padding-left-10">删除</div>
-                            </div>
+                                )
+                            }
                         </div>
                         <div className="go_pay margin-top-20">
                             <div className="col-md-2 col-no-padding col-padding-left-10">
@@ -109,6 +126,6 @@ class ShoppingCart extends Component {
 
 export default connect((state) => {
     return {
-        index: state.index
+        shoppingCart: state.shoppingCart
     }
 })(ShoppingCart);

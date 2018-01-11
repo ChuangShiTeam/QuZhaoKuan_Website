@@ -8,6 +8,8 @@ import index from './store/index';
 import newStyle from './store/newStyle';
 import burstStyle from './store/burstStyle';
 import collocation from './store/collocation';
+import productList from './store/productList';
+import shoppingCart from './store/shoppingCart';
 
 import Index from './view/Index';
 import NotFound from './view/NotFound';
@@ -25,6 +27,8 @@ const store = createStore(
         newStyle,
         burstStyle,
         collocation,
+        productList,
+        shoppingCart,
         routing: routerReducer
     })
 );
@@ -37,7 +41,7 @@ const Routers = () =>
     <Provider store={store}>
         <Router history={browserHistory}>
             <Route path="/" onEnter={handleEnter}>
-                <IndexRedirect to="/index"/>
+                <IndexRedirect to="/shopping/cart"/>
                 <Route path="/index" component={Index}/>
                 <Route path="/new/style" component={NewStyle}/>
                 <Route path="/burst/style" component={BurstStyle}/>
